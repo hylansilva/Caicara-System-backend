@@ -1,6 +1,11 @@
 package armazem;
 
+import produto.Produto;
+import users.Cliente;
+import users.Cooperado;
 import users.Funcionario;
+
+import java.util.List;
 
 public class Armazem {
     private int numeroArmazem;
@@ -8,6 +13,9 @@ public class Armazem {
     private double capacidadeTon;
     private double capacidadeMetrosQuadrados;
     private Funcionario gerenteResponsavel;
+    private List<Cooperado> listaCooperados;
+    private List<Cliente> listaClientes;
+    private List<Produto> listaProdutos;
 
     public Armazem() {
     }
@@ -65,5 +73,29 @@ public class Armazem {
 
     public void setGerenteResponsavel(Funcionario gerenteResponsavel) {
         this.gerenteResponsavel = gerenteResponsavel;
+    }
+
+    public List<Cooperado> getListaCooperados() {
+        return listaCooperados;
+    }
+
+    public void setListaCooperados(List<Cooperado> listaCooperados) {
+        this.listaCooperados = listaCooperados;
+    }
+
+    public List<Cliente> getListaClientes() {
+        return listaClientes;
+    }
+
+    public void setListaClientes(List<Cliente> listaClientes) {
+        this.listaClientes = listaClientes;
+    }
+
+    public List<Produto> getListaProdutos() {
+        return listaProdutos;
+    }
+
+    public void setListaProdutos(List<Produto> listaProdutos) {
+        this.listaProdutos = listaProdutos;
     }
 }
